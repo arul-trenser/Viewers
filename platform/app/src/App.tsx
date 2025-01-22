@@ -22,6 +22,7 @@ import {
   CineProvider,
   UserAuthenticationProvider,
   ToolboxProvider,
+  ServicesProvider,
 } from '@ohif/ui';
 import {
   ThemeWrapper as ThemeWrapperNext,
@@ -114,6 +115,7 @@ function App({
     [I18nextProvider, { i18n }],
     [ThemeWrapperNext],
     [ThemeWrapper],
+    [ServicesProvider, { services: servicesManager.services }],
     [ToolboxProvider],
     [ViewportGridProvider, { service: viewportGridService }],
     [ViewportDialogProvider, { service: uiViewportDialogService }],
